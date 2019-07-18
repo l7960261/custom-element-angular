@@ -33,8 +33,8 @@ package.json
 ```
 ...
     "el-build": "npm run el-build-task && npm run el-package-task",
-    "el-build-task": "ng build --prod --output-hashing=none",
-    "el-package-task": "cat ./dist/custom-element-angular/{polyfills,runtime,main}-es5.js > ./dist/custom-element-angular.js"
+    "el-build-task": "ng build --prod --output-hashing=none --output-path=./dist",
+    "el-package-task": "cat ./dist/{polyfills,runtime,main}-es5.js > ./dist/custom-element-angular.js"
 ...
 ```
 
