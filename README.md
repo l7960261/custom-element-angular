@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/l7960261/custom-element-angular.svg?branch=master)](https://travis-ci.com/l7960261/custom-element-angular) [![Dependency Status](https://david-dm.org/l7960261/custom-element-angular.svg)](https://david-dm.org/l7960261/custom-element-angular) [![devDependency Status](https://david-dm.org/l7960261/custom-element-angular/dev-status.svg)](https://david-dm.org/l7960261/custom-element-angular?type=dev)
+
 # Custom element angular
 
 Generate custom element by angular project that use NG8.
