@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "el-build": "npm run el-build-task && npm run el-package-task",
+    "el-build-task": "ng build --prod --output-hashing=none",
+    "el-package-task": "cat ./dist/custom-element-angular/{polyfills,runtime,main}-es5.js > ./dist/custom-element-angular.js"
   },
   "private": true,
   "dependencies": {
@@ -15,12 +18,17 @@
     "@angular/common": "~8.1.1",
     "@angular/compiler": "~8.1.1",
     "@angular/core": "~8.1.1",
+    "@angular/elements": "^8.1.1",
     "@angular/forms": "~8.1.1",
     "@angular/platform-browser": "~8.1.1",
     "@angular/platform-browser-dynamic": "~8.1.1",
     "@angular/router": "~8.1.1",
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "classlist.js": "^1.1.20150312",
+    "core-js": "^2.5.4",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
+    "web-animations-js": "^2.3.2",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
