@@ -8,8 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "el-build": "npm run el-build-task",
-    "el-build-task": "ng build custom-element-angular --prod --output-hashing=none",
+    "el-build": "npm run el-build-task && npm run el-build-list",
+    "el-build-task": "ng build --prod --output-hashing=none",
+    "el-build-list": "ls",
     "el-package-task": "cat ./dist/custom-element-angular/{polyfills,runtime,main}-es5.js > ./dist/custom-element-angular.js"
   },
   "private": true,
