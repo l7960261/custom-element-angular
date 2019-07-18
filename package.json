@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "el-build": "npm run el-build-task && npm run el-package-task",
-    "el-build-task": "ng build --prod --output-hashing=none --output-path=./dist",
+    "el-build-task": "ng build --prod --output-hashing=none --output-path=./dist --base-href=https://l7960261.github.io/custom-element-angular/",
     "el-package-task": "cat ./dist/{polyfills,runtime,main}-es5.js > ./dist/custom-element-angular.js",
     "deploy": "gh-pages -d dist"
   },
